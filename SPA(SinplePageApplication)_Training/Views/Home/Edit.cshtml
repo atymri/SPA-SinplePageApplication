@@ -1,0 +1,67 @@
+﻿@model int
+
+
+<dl>
+    <div class="alert alert-danger">
+        سن کاربر باید بین 5 تا 99 سال باشد و حداقل حروف مجاز برای نام و نام خانوادگی 5 کاراکتر است
+    </div>
+    <dt>نام</dt>
+    <dd><input type="text" class="form-control" id="PersonName" /></dd>
+
+    <dt>نام خانوادگی</dt>
+    <dd><input type="text" class="form-control" id="PersonFamily" /></dd>
+
+    <dt>سن</dt>
+    <dd><input type="number" class="form-control" id="PersonAge" /></dd>
+
+    <dt></dt>
+    <dd><button class="btn btn-primary" onclick="Edit()">ویرایش</button></dd>
+</dl>
+
+<script>
+    $(function () {
+        $("#showLable").html("ویرایش کاربر ");
+        $("#returnButton").show();
+
+        // getting the user data from the API
+        // The key point is to get the json file, using '.getJSON'
+        $.getJSON("/Api/People/" + @Model,
+            function(res) {
+                $("#PersonName").val(res.PersonName);
+                $("#PersonFamily").val(res.PersonFamily);
+                $("#PersonAge").val(res.PersonAge);
+            });
+
+
+    });
+
+    
+
+// sending the data to the api
+    function Edit() {
+        // making the json object
+
+        /*
+         * همیشه دیتارو داخل فانکشن بگیر, در غیر این صورت دیتا ارسال نمیشه
+         */
+        var person = {
+            PersonID: @Model,
+            PersonName: $("#PersonName").val(),
+            PersonFamily: $("#PersonFamily").val(),
+            PersonAge: $("#PersonAge").val()
+        };
+
+        $.ajax({
+            url: "/Api/People/" +@Model,
+            type: "PUT",
+            data: person,
+            success: function () {
+                $("#returnButton").hide();
+                $("#list").load("/Home/List");
+            },
+            error: function(err){
+                alert("خطای غیر منتظره "+ err);
+            }
+        });
+    }
+</script>

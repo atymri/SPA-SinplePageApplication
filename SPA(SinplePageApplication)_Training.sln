@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPA(SinplePageApplication)_Training", "SPA(SinplePageApplication)_Training\SPA(SinplePageApplication)_Training.csproj", "{D456CEDD-8CCA-4E9F-B176-04D344F6D0A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D456CEDD-8CCA-4E9F-B176-04D344F6D0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D456CEDD-8CCA-4E9F-B176-04D344F6D0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D456CEDD-8CCA-4E9F-B176-04D344F6D0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D456CEDD-8CCA-4E9F-B176-04D344F6D0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B65D9D0-7170-457B-82C5-52F7B75D6AF9}
+	EndGlobalSection
+EndGlobal
