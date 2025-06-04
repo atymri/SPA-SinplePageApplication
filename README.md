@@ -1,58 +1,26 @@
-**SPA - Simple Page Application**
+# Single- Page Application (SPA)
 
-SPA is a basic experiment in building a Single Page Application using only vanilla JavaScript, HTML, and CSS. It doesn’t use any frontend frameworks like React or Vue – just raw code to understand how SPAs actually work under the hood.
+This is a minimal Single Page Application built using plain JavaScript, HTML, and CSS, on asp.net.
+It demonstrates basic client-side routing without relying on any external frameworks.
 
-This project is great for learning or testing ideas, but it's not production-ready. It’s a sandbox to see how routing, rendering, and interaction can be done manually.
+## Features
 
-**🚀 Features**
-
-🔄 Basic client-side routing (using hash or history)
-
-🎨 Minimal UI built with bootstrap
-
-✅ No heavy frameworks or libraries involved
+* Client-side routing u
+* Clean structure with HTML, CSS, and JS
+* No external heavy libraries or frameworks for javascript
 
 
-**📂 Project Structure**
+## Getting Started
 
-SPA-SinplePageApplication/
-├── index.html         # Main HTML file
-├── style.css          # Basic styling
-├── app.js             # Handles routing and content loading
-└── README.md
+1. Clone the repository:
 
-**🚧 How to Use**
-
-Clone the repo:
-
+```bash
 git clone https://github.com/atymri/SPA-SinplePageApplication.git
 cd SPA-SinplePageApplication
+```
+1. Run  `dotnet build`
+2. Then `dotnet run`
 
-Open index.html in your browser:
+## License
 
-You can double-click the file, or use a local server:
-
-Explore how pages change without reloading.
-
-**Who This Is For**
-
-Beginners curious about SPAs
-
-Devs who want a no-framework reference
-
-Anyone experimenting with manual DOM manipulation and routing
-
-**🚫 Limitations**
-
-No state management
-
-No error handling or fallback routes
-
-No support for deep linking in production
-
-Very limited styling and structure
-
-----------
-
-MIT License – feel free to use and modify.
-
+MIT License, feel free to contribute.
